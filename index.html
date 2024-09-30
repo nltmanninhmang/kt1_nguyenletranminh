@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Kiểm Tra 1 - Nguyễn Lê Trần Minh</title>
+</head>
+<style>
+    table, th, td{
+        border: 1px solid black;
+        width: 607px;
+        height: 48px;
+    }
+    label{
+        width: 190px;
+        height: 35px;
+        margin-left: 6px;
+        font-weight: 600;
+    }
+    .form-control{
+        width: 300px;
+        height: 35px;
+        margin-left: 6px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    thead{
+        height: 87px;
+    }
+    .button{
+        width: 70px;
+        height: 40px;
+        width: 295px;
+        border-radius: 10px;
+        border: none;
+    }
+    textarea{
+        margin-left: 7px;
+        margin-top: 5px;
+    }
+    .upfile{
+        margin-left: 7px;
+    }
+    select{
+        height: 30px;
+        width: 100px;
+    }
+</style>
+<body>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="row" colspan="2"><h2>ĐĂNG KÝ</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="hoten">Họ tên</label>
+                    </td>
+                    <td>
+                        <input class="form-control" type="text" id="hoten" name="hoten" placeholder="Nhập họ tên">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">Username</label>
+                    </td>
+                    <td>
+                        <input class="form-control" type="text" id="username" name="username" placeholder="Nhập tên đăng nhập">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Mật khẩu</label>
+                    </td>
+                    <td>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passwordagain">Nhập lại mật khẩu</label>
+                    </td>
+                    <td>
+                        <input class="form-control" type="password" id="passwordagain" name="passwordagain" placeholder="Nhập lại mật khẩu">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Giới tính</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="nam">
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender" value="nu">
+                        <label for="female">Nữ</label>
+                        <input type="radio" id="orther" name="gender" value="khac">
+                        <label for="orther">Khác</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="birthday">Ngày sinh</label>
+                    </td>
+                    <td>
+                        <select id="birthday" name="birthday" style="margin-left: 7px;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="birthday" name="birthday">
+                            <option value="thang1">Tháng 1</option>
+                            <option value="thang2">Tháng 2</option>
+                            <option value="thang3">Tháng 3</option>
+                            <option value="thang4">Tháng 4</option>
+                            <option value="thang5">Tháng 5</option>
+                            <option value="thang6">Tháng 6</option>
+                            <option value="thang7">Tháng 7</option>
+                            <option value="thang8">Tháng 8</option>
+                            <option value="thang9">Tháng 9</option>
+                            <option value="thang10">Tháng 10</option>
+                            <option value="thang11">Tháng 11</option>
+                            <option value="thang12">Tháng 12</option>
+                        </select>
+                        <select id="birthday" name="birthday">
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="location">Địa chỉ</label>
+                    </td>
+                    <td>
+                        <textarea id="location" name="location" rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="upload">Avatar</label>
+                    </td>
+                    <td>
+                        <input type="file" name="file" id="upload" class="upfile">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sở thích</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="xemphim" id="xemphim">
+                        <label for="xemphim">Xem phim</label>
+                        <input type="checkbox" name="thethao" id="thethao">
+                        <label for="thethao">Thể thao</label>
+                        <input type="checkbox" name="trochoi" id="trochoi">
+                        <label for="trochoi">Trò chơi</label>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td scope="row" colspan="2">
+                        <button style="margin-left: 2px; background-color: #33CCFF; color: white;" class="button" type="submit" id="submit">Gửi</button>
+                        <button style="background-color: #9999FF; color: white;" class="button" type="reset">Reset</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
